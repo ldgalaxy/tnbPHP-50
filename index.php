@@ -1,8 +1,19 @@
 <?php
 
-$string = 'This part don\'t search. This part search.';
-$string_new = substr_replace($string, 'Larry', 29, 4);
 
-echo $string_new;
+$find = array('is', 'string', 'example');
+$replace = array('IS', 'STRING', '');
+$string = 'This is a string, and is an example.';
+
+$new_string = str_replace($find, $replace, $string);
+
+
+
+
+
+echo $new_string;
+
+
+
 
 ?>
